@@ -12,7 +12,7 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 git clone https://github.com/Davydoff64/Test-mysql-petclinic.git
 cd Test-mysql-petclinic
 mvn clean package
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 You can then access petclinic here: http://localhost:8080/
