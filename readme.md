@@ -1,3 +1,4 @@
+https://github.com/spring-projects/spring-petclinic.git
 # Spring PetClinic Sample Application [![Build Status](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml/badge.svg)](https://github.com/spring-projects/spring-petclinic/actions/workflows/maven-build.yml)
 
 ## Understanding the Spring Petclinic application with a few diagrams
@@ -8,10 +9,10 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 
 
 ```
-git clone https://github.com/spring-projects/spring-petclinic.git
-cd spring-petclinic
-./mvnw package
-java -jar target/*.jar
+git clone https://github.com/Davydoff64/Test-mysql-petclinic.git
+cd Test-mysql-petclinic
+mvn clean package
+docker-compose up --build
 ```
 
 You can then access petclinic here: http://localhost:8080/
