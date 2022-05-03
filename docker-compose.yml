@@ -14,7 +14,7 @@ services:
     volumes:
       - "~/docker-mysql:/var/lib/mysql/"
   app:
-    build: ~/spring/ 
+    build: . 
     volumes: 
       - ./src:/opt/app
     ports: 
