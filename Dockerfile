@@ -9,7 +9,7 @@ FROM adoptopenjdk/openjdk11:ubi AS two
 
 COPY --from=one spring spring-petclinic
 WORKDIR spring-petclinic
-ENTRYPOINT ["java", "-jar", "/target/spring-petclinic-2.5.0-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "./target/spring-petclinic-2.5.0-SNAPSHOT.jar"]
 
 
 
