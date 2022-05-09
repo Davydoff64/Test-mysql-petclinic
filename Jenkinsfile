@@ -3,12 +3,12 @@ pipeline {
     stages { 
          stage('Deployment App') {
             steps {
-                sh('mvn -f ./Test-mysql-petclinic clean package')
+                sh('mvn clean package')
             }
         }
         stage('Launch App') {
             steps {            
-                sh('docker-compose -f Test-mysql-petclinic/docker-compose.yml up -d') 
+                sh('docker-compose up -d') 
             }
         }
     }
