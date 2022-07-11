@@ -9,7 +9,6 @@ pipeline {
        sh 'mvn clean package'
       }
     }
-  } 
     stage ('Docker Compose') {
       steps {
         sh 'docker-compose up -d'
